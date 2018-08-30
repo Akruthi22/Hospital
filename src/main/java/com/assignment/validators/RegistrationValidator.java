@@ -28,5 +28,20 @@ public class RegistrationValidator implements Validator {
             errors.rejectValue("gender","registration.gender","gender cannot be empty");
 
         }
+        if (registration.geteMail() == null || registration.geteMail().equals("")) {
+            System.out.println("Email is empty or null");
+            errors.rejectValue("eMail","registration.eMail","email cannot be empty");
+
+        }
+        if (registration.getUserName() == null || registration.getUserName().equals("")) {
+            System.out.println("username is empty or null");
+            errors.rejectValue("userName","registration.userName","Username cannot be empty");
+
+        }
+        if (registration.getPassword() == null || registration.getPassword().equals("")) {
+            System.out.println("password is empty or null");
+            errors.rejectValue("password","registration.password","password cannot be empty");
+
+        }
     }
 }

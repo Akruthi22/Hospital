@@ -64,8 +64,7 @@
     <div class="form-group">
         <label class="control-label col-sm-2">Gender:</label>
         <div class="col-sm-10">
-            <%--<form:input path="gender" type="text" class="form-control" id="gender" name="gender" placeholder="Enter gender"/>--%>
-            <%--<form:errors path="gender" cssClass="er"/>--%>
+
 
             <input type="radio" class="form-check-input" name="gender" id="male" value="Male">Male
         </div>
@@ -74,24 +73,33 @@
             <input type="radio" class="form-check-input" name="gender" id="female" value="Female">Female
         </div>
 
+
     </div>
 
     <div class="form-group">
         <label class="control-label col-sm-2" for="eMail">Email:</label>
         <div class="col-sm-10">
-            <input type="email" class="form-control" id="eMail" name="eMail" placeholder="Enter email">
+            <%--<input type="email" class="form-control" id="eMail" name="eMail" placeholder="Enter email">--%>
+                <form:input path="eMail" type="text" class="form-control" id="eMail" name="eMail" placeholder="Enter email id"/>
+                <form:errors path="eMail" cssClass="er"/>
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-sm-2" for="userName">Username:</label>
+        <%--@declare id="username"--%><label class="control-label col-sm-2" for="userName">Username:</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="userName" name="userName" placeholder="Choose a user name">
+            <%--<input type="text" class="form-control" id="userName" name="userName" placeholder="Choose a user name">--%>
+                <form:input path="userName" type="text" class="form-control" id="userName" name="userName" placeholder="Enter username"/>
+                <form:errors path="userName" cssClass="er"/>
+
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-sm-2" for="password">Password:</label>
         <div class="col-sm-10">
-            <input type="password" class="form-control" id="password" name="password" placeholder="Choose a password">
+            <%--<input type="password" class="form-control" id="password" name="password" placeholder="Choose a password">--%>
+                <form:input path="password" type="text" class="form-control" id="password" name="password" placeholder="Enter password"/>
+                <form:errors path="password" cssClass="er"/>
+
         </div>
     </div>
 
